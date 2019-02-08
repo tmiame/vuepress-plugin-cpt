@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-cpt",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Custom Post Type & Taxonomy & Pagination Plugin for Vuepress",
   "main": "index.js",
   "scripts": {
