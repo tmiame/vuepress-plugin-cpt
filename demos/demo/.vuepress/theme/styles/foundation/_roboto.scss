@@ -1,0 +1,70 @@
+@charset 'UTF-8';
+
+html {
+  @include FR_MQ_ONLY(XS) { font-size: 3.25vw; }
+  @include FR_MQ_ONLY(S) { font-size: 3.5vw; }
+  @include FR_MQ_ONLY(XT) { font-size: 14px; }
+  @include FR_MQ_ONLY(T) { font-size: 15px; }
+  @include FR_MQ_ONLY(M) { font-size: 16px; }
+  @include FR_MQ_MIN(L) { font-size: 16px; }
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0em;
+
+  // Support for all WebKit browsers.
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  // Support for Safari and Chrome.
+  text-rendering: optimizeLegibility;
+  // Support for Firefox.
+  -moz-osx-font-smoothing: grayscale;
+  // Support for IE.
+  font-feature-settings: 'liga';
+
+  background-color: COLOR('main', 'body-bg');
+  color: COLOR('text', 'black');
+
+  letter-spacing: VAR(letter-space, body);
+  @supports (font-feature-settings: 'palt' 1) {
+    font-feature-settings: 'palt' 1;
+    letter-spacing: VAR(letter-space, body-palt);
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  @include FR_MOBILE_TAP(rgba(0,0,0,0));
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  max-width: 100%;
+  min-width: 300px;
+  position: relative;
+}
+
+// Hide Number Input Spin
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  appearance: textfield;
+}

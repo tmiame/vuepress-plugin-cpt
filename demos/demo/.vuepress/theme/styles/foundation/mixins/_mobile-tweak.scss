@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+@mixin FR_MOBILE_TAP($color: rgba(0,0,0,0) ) {
+  @if $color == rgba(0,0,0,0) {
+    -webkit-tap-highlight-color: $color;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: $color;
+    tap-highlight-color: transparent;
+  }
+
+  @else {
+    -webkit-tap-highlight-color: $color;
+    tap-highlight-color: $color;
+  }
+}
+
+@mixin FR_MOBILE_CELLOUT($cellout: none) {
+  -webkit-touch-callout: $cellout;
+  touch-callout: $cellout;
+}
+
+@mixin FR_MOBILE_USER_SELECT($select: none) {
+  -webkit-user-select: $select;
+  user-select: $select;
+}
+
+@mixin FR_MOBILE_SCROLL_TOUCH() {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}

@@ -1,0 +1,121 @@
+@charset 'UTF-8';
+
+/**
+ * Name: Posts
+ * ===========================================
+ */
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.post {
+  padding: 1rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid currentColor;
+  &.is-touch {
+    box-shadow: 0 5px 10px rgba(#000000, 0.2);
+  }
+}
+
+.post_title {
+  @include FR_TEXT_OVERFLOW(1, 100%);
+  @include FONTSIZE(M, S);
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.post_taxonomy {
+  @include FONTSIZE(S);
+  > a {
+    color: COLOR('main', 'green');
+    &:after {
+      content: ', ';
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+.post_date {
+  @include FR_TEXT_OVERFLOW(1, 100%);
+  @include FONTSIZE(S);
+  color: COLOR('text', 'light');
+}
+
+.post_description {
+  @include FR_TEXT_OVERFLOW(1, 100%);
+  @include FONTSIZE(S);
+  color: COLOR('text', 'light');
+}
+
+.postTaxonomy {
+  @include FR_FLEX_LAYOUT(flex-start, center);
+}
+
+.postTaxonomy_title {
+  @include FONTSIZE(M, S);
+  font-weight: bold;
+  line-height: 1;
+  display: block;
+}
+
+.postTaxonomy_count {
+  @include FR_WH(2em, 'flex');
+  @include FR_FLEX_LAYOUT(center, center);
+  margin-left: auto;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: COLOR('main', 'green');
+  color: #ffffff;
+}
+
+.post_author {
+  @include FR_FLEX_LAYOUT(flex-start, center);
+  position: relative;
+}
+
+.post_author_avatar {
+  @include FR_BG;
+  @include FR_WH(70px, 'flex');
+  @include SPACE('margin-right');
+  border-radius: 50%;
+  background-image: url($IMAGES_DIR + 'avatar.jpg');
+}
+
+.post_author_content {
+  max-width: 100%;
+}
+
+.post_author_name {
+  @include FONTSIZE(M, S);
+  margin-bottom: 0.1em;
+  padding-top: 0.1em;
+  margin-left: -0.1em;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.post_author_link {
+  @include WEBFONT(brand, 500);
+  @include FONTSIZE(S);
+  position: relative;
+  color: COLOR('text', 'light');
+  display: inline-block;
+  &:before {
+    content: '';
+    @include FR_FULLSIZE('bottom-half');
+    background-color: currentColor;
+    height: 2px;
+    opacity: 0.25;
+  }
+}

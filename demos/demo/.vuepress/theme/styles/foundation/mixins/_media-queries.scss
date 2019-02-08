@@ -1,0 +1,163 @@
+@charset 'UTF-8';
+
+@mixin FR_MQ_MIN($query) {
+  @if $query == S {
+    @media (min-width: VAR(breakpoint, XS) + 0.01px) { @content; }
+  }
+
+  @else if $query == XT {
+    @media (min-width: VAR(breakpoint, S) + 0.01px) { @content; }
+  }
+
+  @else if $query == T {
+    @media (min-width: VAR(breakpoint, XT) + 0.01px) { @content; }
+  }
+
+  @else if $query == M {
+    @media (min-width: VAR(breakpoint, T) + 0.01px) { @content; }
+  }
+
+  @else if $query == L {
+    @media (min-width: VAR(breakpoint, M) + 0.01px) { @content; }
+  }
+
+  @else if $query == XL {
+    @media (min-width: VAR(breakpoint, L) + 0.01px) { @content; }
+  }
+
+  @else {
+    @media (min-width: $query) { @content; }
+  }
+}
+
+@mixin FR_MQ_MAX($query) {
+  @if $query == XS {
+    @media (max-width: VAR(breakpoint, XS)) { @content; }
+  }
+
+  @else if $query == S {
+    @media (max-width: VAR(breakpoint, S)) { @content; }
+  }
+
+  @else if $query == XT {
+    @media (max-width: VAR(breakpoint, XT)) { @content; }
+  }
+
+  @else if $query == T {
+    @media (max-width: VAR(breakpoint, T)) { @content; }
+  }
+
+  @else if $query == M {
+    @media (max-width: VAR(breakpoint, M)) { @content; }
+  }
+
+  @else if $query == L {
+    @media (max-width: VAR(breakpoint, L)) { @content; }
+  }
+
+  @else if $query == XL {
+    @media (max-width: VAR(breakpoint, XL)) { @content; }
+  }
+
+  @else {
+    @media (max-width: $query) { @content; }
+  }
+}
+
+@mixin FR_MQ_ONLY($query) {
+  @if $query == QS {
+    @media (min-width: 0) and (max-width: VAR(breakpoint, XT)) { @content; }
+  }
+
+  @else if $query == QT {
+    @media (min-width: VAR(breakpoint, XT) + 0.01px) and (max-width: VAR(breakpoint, T)) { @content; }
+  }
+
+  @else if $query == XS {
+    @media (min-width: 0) and (max-width: VAR(breakpoint, XS)) { @content; }
+  }
+
+  @else if $query == S {
+    @media (min-width: VAR(breakpoint, XS) + 0.01px) and (max-width: VAR(breakpoint, S)) { @content; }
+  }
+
+  @else if $query == XT {
+    @media (min-width: VAR(breakpoint, S) + 0.01px) and (max-width: VAR(breakpoint, XT)) { @content; }
+  }
+
+  @else if $query == T {
+    @media (min-width: VAR(breakpoint, XT) + 0.01px) and (max-width: VAR(breakpoint, T)) { @content; }
+  }
+
+  @else if $query == M {
+    @media (min-width: VAR(breakpoint, T) + 0.01px) and (max-width: VAR(breakpoint, M)) { @content; }
+  }
+
+  @else if $query == L {
+    @media (min-width: VAR(breakpoint, M) + 0.01px) and (max-width: VAR(breakpoint, L)) { @content; }
+  }
+
+  @else if $query == XL {
+    @media (min-width: VAR(breakpoint, L) + 0.01px) { @content; }
+  }
+}
+
+@mixin FR_MQ_BETWEEN($query-min: null, $query-max: null) {
+  $max: 3000px;
+
+  @if $query-max == S {
+    $max: VAR(breakpoint, S);
+  }
+
+  @else if $query-max == XT {
+    $max: VAR(breakpoint, XT);
+  }
+
+  @else if $query-max == T {
+    $max: VAR(breakpoint, T);
+  }
+
+  @else if $query-max == M {
+    $max: VAR(breakpoint, M);
+  }
+
+  @else if $query-max == L {
+    $max: VAR(breakpoint, L);
+  }
+
+  @else if $query-max == XL {
+    $max: VAR(breakpoint, XL);
+  }
+
+  @if $query-min == XS {
+    @media (min-width: 0) and (max-width: $max) { @content; }
+  }
+
+  @else if $query-min == S {
+    @media (min-width: VAR(breakpoint, XS) + 0.01px) and (max-width: $max) { @content; }
+  }
+
+  @else if $query-min == XT {
+    @media (min-width: VAR(breakpoint, S) + 0.01px) and (max-width: $max) { @content; }
+  }
+
+  @else if $query-min == T {
+    @media (min-width: VAR(breakpoint, XT) + 0.01px) and (max-width: $max) { @content; }
+  }
+
+  @else if $query-min == M {
+    @media (min-width: VAR(breakpoint, T) + 0.01px) and (max-width: $max) { @content; }
+  }
+
+  @else if $query-min == L {
+    @media (min-width: VAR(breakpoint, M) + 0.01px) and (max-width: $max) { @content; }
+  }
+
+  @else if $query-min == XL {
+    @media (min-width: VAR(breakpoint, L) + 0.01px) and (max-width: $max) { @content; }
+  }
+
+  @else {
+    @media (min-width: $query-min) and (max-width: $query-max) { @content; }
+  }
+}

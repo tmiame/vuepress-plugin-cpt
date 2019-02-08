@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+@mixin WEBFONT($family: apple, $weight: normal) {
+  @if $family == normal {
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  @else if $family == brand {
+    font-family: 'IBM Plex Mono', 'Menlo', 'Bitstream Vera Sans Mono', 'Source Code Pro', 'Consolas', 'Courier', monospace;
+  }
+
+  @if $weight != normal {
+    font-weight: $weight;
+  }
+}

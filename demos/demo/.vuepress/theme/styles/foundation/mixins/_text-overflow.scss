@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+//
+// Text Mixin
+// use: @include TEXT_OVERFLOW;
+// ===============================
+//
+
+@mixin FR_TEXT_OVERFLOW($line: 1, $width: 100%) {
+  @if $line == 1 {
+    width: $width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @else {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+/**
+ * Name: breadcrumb
+ * ===========================================
+ */
+
+.breadcrumb {
+  @include FR_FLEX_LAYOUT(flex-start, center);
+  @include FONTSIZE(S);
+  @include WEBFONT(brand);
+  .material-icons {
+    font-size: 1em;
+    margin-right: 0.4rem;
+  }
+  > a {
+    @include FR_FLEX_LAYOUT(center, center, false, false, inline-flex);
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    line-height: 1;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:not(.is-disable).is-touch {
+      color: COLOR('main', 'green');
+    }
+    &.is-disable {
+      color: COLOR('text', 'light');
+      pointer-events: none;
+    }
+  }
+}

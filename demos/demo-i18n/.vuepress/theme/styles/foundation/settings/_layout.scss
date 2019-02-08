@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+
+$LAYOUT_PC_XL: 1000px;
+$LAYOUT_PC_L: 1000px;
+$LAYOUT_PC_M: 86vw;
+$LAYOUT_PC_T: 86vw;
+$LAYOUT_MOBILE: 90vw;
+$LAYOUT_MOBILE_L: 100vw - (7vw * 2);
+$LAYOUT_MOBILE_S: 100vw - (3vw * 2);
+
+$LAYOUT_MOBILE_LARGE: 6.5vw;
+$LAYOUT_MOBILE_NORMAL: 5vw;
+$LAYOUT_MOBILE_SMALL: 3vw;
+
+$LAYOUT_MOBILE: (100vw - ($LAYOUT_MOBILE_NORMAL * 2));
+$LAYOUT_MOBILE_L: (100vw - ($LAYOUT_MOBILE_LARGE * 2));
+$LAYOUT_MOBILE_S: (100vw - ($LAYOUT_MOBILE_SMALL * 2));
+
+@mixin LAYOUT_PC($type: M) {
+  margin: 0 auto;
+  width: 100%;
+
+  @if $type == M {
+    @include FR_MQ_MIN(XL) { max-width: $LAYOUT_PC_XL; }
+
+    @include FR_MQ_ONLY(L) { max-width: $LAYOUT_PC_L; }
+
+    @include FR_MQ_ONLY(M) { max-width: $LAYOUT_PC_M; }
+
+    @include FR_MQ_ONLY(QT) { max-width: $LAYOUT_PC_T; }
+  }
+}
+
+// Mobile Side Padding
+@mixin LAYOUT_MOBILE($type: normal) {
+  @include FR_MQ_ONLY(QS) {
+    @if $type == normal {
+      padding-left: $LAYOUT_MOBILE_NORMAL - 0.2vw;
+      padding-right: $LAYOUT_MOBILE_NORMAL + 0.2vw;
+    }
+
+    @else if $type == L {
+      padding-left: $LAYOUT_MOBILE_LARGE - 0.15vw;
+      padding-right: $LAYOUT_MOBILE_LARGE + 0.15vw;
+    }
+
+    @else if $type == S {
+      padding-left: $LAYOUT_MOBILE_SMALL - 0.2vw;
+      padding-right: $LAYOUT_MOBILE_SMALL + 0.2vw;
+    }
+  }
+}

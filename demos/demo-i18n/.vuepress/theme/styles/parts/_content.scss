@@ -1,0 +1,162 @@
+@charset 'UTF-8';
+
+/**
+ * Name: VuePress default theme > theme.styl
+ * ===========================================
+ */
+
+.content {
+  > * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  > *:first-child {
+    margin-top: 0 !important;
+  }
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .material-icons {
+    font-size: 1.2em;
+  }
+
+  p {
+    word-break: break-all;
+    line-height: 2;
+  }
+
+  a {
+    color: COLOR('main', 'green');
+    text-decoration: none;
+    p &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  code {
+    color: COLOR('main', 'red');
+    padding: 0 0.45em 0.125em;
+    margin: 0;
+    font-size: 0.85em;
+    background-color: rgba(COLOR('main', 'red'), 0.1);
+    border-radius: 0.2em;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -0.05em;
+  }
+
+  kbd {
+    background: #eee;
+    border: solid 0.15rem #ddd;
+    border-bottom: solid 0.25rem #ddd;
+    border-radius: 0.15rem;
+    padding: 0 0.15em;
+  }
+
+  blockquote {
+    font-size: 1.2rem;
+    color: #999;
+    border-left: .25rem solid #dfe2e5;
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    line-height: 1.25;
+    .content:not(.custom) > & {
+      margin-top: (0.5rem);
+      padding-top: (1rem);
+      margin-bottom: 0;
+      &:first-child {
+        margin-top: -1.5rem;
+        margin-bottom: 1rem;
+        & + p,
+        & + pre,
+        & + .custom-block {
+          margin-top: 2rem;
+        }
+      }
+    }
+    &:hover .header-anchor {
+      opacity: 1
+    }
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.65rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 3.5rem;
+    border-bottom: 1px solid rgba(#000000, 0.9);
+  }
+
+  h3 {
+    font-size: 1.35rem;
+  }
+
+  a.header-anchor {
+    font-size: 0.85em;
+    float: left;
+    margin-left: -0.87em;
+    padding-right: 0.23em;
+    margin-top: 0.125em;
+    opacity: 0;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  code,
+  kbd,
+  .line-number {
+    @include WEBFONT(brand, 500);
+    letter-spacing: -0.005em;
+    font-style: italic;
+  }
+
+  // p,
+  ul,
+  ol {
+    line-height: 1.7;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid currentColor;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    display: block;
+    overflow-x: auto;
+  }
+
+  tr {
+    border-top: 1px solid #dfe2e5;
+    &:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+  }
+
+  th,
+  td {
+    border: 1px solid #dfe2e5;
+    padding: 0.6em 1em;
+  }
+}

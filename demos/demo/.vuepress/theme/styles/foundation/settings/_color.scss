@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+
+@function COLOR($color, $key: 'core') {
+  @return map-get(map-get($COLOR-PALETTES, $color), $key);
+}
+
+// stylelint-disable
+$COLOR-PALETTES: (
+  'main': (
+    core: #3eaf7c,
+    'white': #f7fafa,
+    'green': #3eaf7c,
+    'red': #e61919,
+    'border': rgba(14, 60, 86, 0.07),
+    'black':rgba(#000000, 0.9),
+    'body-bg': #ebf4ec
+  ),
+  'text': (
+    'light': rgba(#000000, 0.4),
+    'gray': rgba(#000000, 0.6),
+    'black': rgba(#000000, 0.9)
+  ),
+  'modal-bg': (
+    core: rgba(#000000, 0.7)
+  )
+);
+// stylelint-enable

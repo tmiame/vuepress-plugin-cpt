@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+/**
+ * Name: Headline Style
+ * ===========================================
+ */
+
+.headline {
+  position: relative;
+  .material-icons {
+    font-size: 1.2em;
+    margin-right: 0.3em;
+  }
+}
+
+.headline_h1 {
+  @include FONTSIZE(L, S);
+  position: relative;
+  left: -0.05em;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  line-height: 1;
+}
+
+.headline_h2 {
+  @include FONTSIZE(M, S);
+  position: relative;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+
+  .material-icons {
+    font-size: 1.2em;
+    margin-right: 0.3em;
+  }
+}
+
+.headline_h4 {
+  @include FONTSIZE(normal);
+  line-height: 1;
+}

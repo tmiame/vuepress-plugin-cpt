@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+@import 'foundation/variables.scss';
+
+@import 'foundation/mixins/_aspect-same.scss';
+@import 'foundation/mixins/_background-image.scss';
+@import 'foundation/mixins/_element-centered.scss';
+@import 'foundation/mixins/_element-fullsize.scss';
+@import 'foundation/mixins/_flex-layout.scss';
+@import 'foundation/mixins/_media-queries.scss';
+@import 'foundation/mixins/_mobile-tweak.scss';
+@import 'foundation/mixins/_material-icons.scss';
+@import 'foundation/mixins/_text-hide.scss';
+@import 'foundation/mixins/_text-overflow.scss';
+
+@import 'foundation/settings/_color.scss';
+@import 'foundation/settings/_layout.scss';
+@import 'foundation/settings/_space.scss';
+@import 'foundation/settings/_typography.scss';
+@import 'foundation/settings/_webfont.scss';

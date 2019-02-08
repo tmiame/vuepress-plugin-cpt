@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+@mixin FR_BG($size: cover, $position: center, $repeat: no-repeat) {
+  @if $size == cover {
+    background-size: cover;
+  }
+
+  @else if $size == 100% {
+    background-size: 100% auto;
+  }
+
+  @else {
+    background-size: $size;
+  }
+
+  background-position: $position;
+  background-repeat: $repeat;
+}

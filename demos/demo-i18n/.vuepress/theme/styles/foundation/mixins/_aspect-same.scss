@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+@mixin FR_WH($size: null, $type: null) {
+  @if $size != null {
+    width: $size;
+    height: $size;
+  }
+  @if $type == 'text' {
+    line-height: $size;
+    vertical-align: middle;
+    text-align: center;
+  }
+  @else if $type == 'flex' {
+    flex-basis: $size;
+    min-width: $size;
+  }
+}

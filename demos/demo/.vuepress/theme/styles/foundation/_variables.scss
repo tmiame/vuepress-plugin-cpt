@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+$ASSETS_DIR: '../assets/';
+$IMAGES_DIR: '../assets/images/';
+
+@function VAR($var, $key: default) {
+  @return map-get(map-get($VAR-PALETTES, $var), $key);
+}
+
+// stylelint-disable
+$VAR-PALETTES: (
+  breakpoint: (
+    XS: 350px, // Device Size for Mobile ~4inch (iPhone 5)
+    S: 450px, // Device Size for Mobile 5inch~ (iPhone 6/6Plus~, Galaxy 7...)
+    XT: 600px, // Device Size for Phablet (Galaxy Note, Xperia ZL)
+    T: 960px, // Device Size for Tablet (iPad Mini, iPad)
+    M: 1264px, // Device Size for Mini computer
+    L: 1570px, // Device Size for Computer
+    XL: 1904px // Device Size for Large Computer
+  ),
+  ease: (
+    md: cubic-bezier(0.4, 0, 0.2, 1),
+    md-decelerate: cubic-bezier(0.0, 0.0, 0.2, 1),
+    md-accelerate: cubic-bezier(0.4, 0.0, 1, 1),
+    easeOut: cubic-bezier(0.19, 1, 0.22, 1),
+    easeInOut: cubic-bezier(0.645, 0.045, 0.355, 1)
+  ),
+  transition: (
+    fast: 200ms cubic-bezier(0.4, 0, 0.2, 1),
+    normal: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  ),
+  letter-space: (
+    body: 0em,
+    body-palt: 0.02em
+  )
+);
+// stylelint-enable

@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+@mixin FR_FLEX_LAYOUT($justify: space-between, $align: center, $wrap: false, $flow: false, $display: flex) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+
+  @if $wrap != false {
+    flex-wrap: $wrap;
+  }
+
+  @if $flow != false {
+    flex-flow: $flow;
+  }
+}

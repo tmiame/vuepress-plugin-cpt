@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+
+@mixin SPACE($type: false, $level: normal, $diff: 0, $important: false) {
+  @if $important == 'important' or $important == true {
+    $important: ' !important';
+  } @else {
+    $important: '';
+  }
+
+  @if $type != false {
+    @if $level == XS {
+      @include FR_MQ_ONLY(QS) { #{$type}: (0.5rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(QT) { #{$type}: (0.5rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(M) { #{$type}: (0.5rem + $diff) #{$important}; }
+      @include FR_MQ_MIN(L) { #{$type}: (0.5rem + $diff) #{$important}; }
+    }
+    @else if $level == S {
+      @include FR_MQ_ONLY(QS) { #{$type}: (0.8rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(QT) { #{$type}: (0.8rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(M) { #{$type}: (0.8rem + $diff) #{$important}; }
+      @include FR_MQ_MIN(L) { #{$type}: (0.8rem + $diff) #{$important}; }
+    }
+    @else if $level == normal {
+      @include FR_MQ_ONLY(QS) { #{$type}: (1.5rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(QT) { #{$type}: (1.5rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(M) { #{$type}: (1.5rem + $diff) #{$important}; }
+      @include FR_MQ_MIN(L) { #{$type}: (1.5rem + $diff) #{$important}; }
+    }
+    @else if $level == M {
+      @include FR_MQ_ONLY(QS) { #{$type}: (2rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(QT) { #{$type}: (2rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(M) { #{$type}: (2rem + $diff) #{$important}; }
+      @include FR_MQ_MIN(L) { #{$type}: (2rem + $diff) #{$important}; }
+    }
+    @else if $level == L {
+      @include FR_MQ_ONLY(QS) { #{$type}: (3rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(QT) { #{$type}: (3rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(M) { #{$type}: (3.5rem + $diff) #{$important}; }
+      @include FR_MQ_MIN(L) { #{$type}: (3.5rem + $diff) #{$important}; }
+    }
+    @else if $level == XL {
+      @include FR_MQ_ONLY(QS) { #{$type}: (5rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(QT) { #{$type}: (5.5rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(M) { #{$type}: (5.5rem + $diff) #{$important}; }
+      @include FR_MQ_MIN(L) { #{$type}: (5.5rem + $diff) #{$important}; }
+    }
+    @else if $level == section {
+      @include FR_MQ_ONLY(QS) { #{$type}: (6.5rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(QT) { #{$type}: (7rem + $diff) #{$important}; }
+      @include FR_MQ_ONLY(M) { #{$type}: (7.5rem + $diff) #{$important}; }
+      @include FR_MQ_MIN(L) { #{$type}: (8rem + $diff) #{$important}; }
+    }
+  }
+}

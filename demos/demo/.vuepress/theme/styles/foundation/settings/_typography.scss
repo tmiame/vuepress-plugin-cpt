@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+
+@function FONTSIZE($fontsize, $tone: 'core') {
+  @return map-get(map-get($FONTSIZE-PALETTES, $fontsize), $tone);
+}
+
+@mixin FONTSIZE($fontsize: normal, $tone: M, $diff: 0) {
+  @if $fontsize == S {
+    @if $tone == S {
+      font-size: (0.7rem + $diff);
+    }
+    @else if $tone == M {
+      font-size: (0.8rem + $diff);
+    }
+  }
+  @else if $fontsize == normal {
+    @if $tone == S {
+      font-size: (0.9rem + $diff);
+    }
+    @else if $tone == M {
+      font-size: (1rem + $diff);
+    }
+    @else if $tone == L {
+      font-size: (1.1rem + $diff);
+    }
+  }
+  @else if $fontsize == M {
+    @if $tone == S {
+      font-size: (1.3rem + $diff);
+    }
+    @else if $tone == M {
+      font-size: (1.4rem + $diff);
+    }
+    @else if $tone == L {
+      font-size: (1.8rem + $diff);
+    }
+  }
+  @else if $fontsize == L {
+    @if $tone == S {
+      font-size: (2rem + $diff);
+    }
+    @else if $tone == M {
+      font-size: (2.4rem + $diff);
+    }
+    @else if $tone == L {
+      font-size: (3rem + $diff);
+    }
+  }
+  @else if $fontsize == XL {
+    font-size: (5rem + $diff);
+  }
+}

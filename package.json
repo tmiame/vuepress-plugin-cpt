@@ -1,0 +1,39 @@
+{
+  "name": "vuepress-plugin-cpt",
+  "version": "0.0.1",
+  "description": "Custom Post Type & Taxonomy & Pagination Plugin for Vuepress",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint --ext .js,.vue ./plugin-cpt",
+    "demo:dev": "vuepress dev ./demos/demo",
+    "demo:build": "vuepress build ./demos/demo",
+    "demo-i18n:dev": "vuepress dev ./demos/demo-i18n",
+    "demo-i18n:build": "vuepress build ./demos/demo-i18n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmiame/vuepress-plugin-cpt.git"
+  },
+  "keywords": [
+    "vuepress",
+    "vuepress-plugin"
+  ],
+  "author": "tmiame",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmiame/vuepress-plugin-cpt/issues"
+  },
+  "homepage": "https://github.com/tmiame/vuepress-plugin-cpt#readme",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.1.0",
+    "import-glob-loader": "^1.1.0",
+    "vue-touchfeedback": "^2.0.0",
+    "vuepress": "^1.0.0-alpha.36"
+  }
+}
