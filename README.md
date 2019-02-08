@@ -7,6 +7,11 @@
 <h4 align="center">Custom post types and taxonomy plugin for VuePress 1.x-alpha.</h4>
 
 <p align="center">
+  <a href="https://www.npmjs.com/package/vuepress-plugin-cpt" rel="nofollow"><img alt="npm version" src="https://img.shields.io/npm/v/vuepress-plugin-cpt.svg?style=flat-square" style="max-width:100%;"></a>
+  <a href="/LICENSE.md" rel="nofollow"><img alt="license" src="https://img.shields.io/github/license/tmiame/vuepress-plugin-cpt.svg?style=flat-square" style="max-width:100%;"></a>
+</p>
+
+<p align="center">
 This plugin is inspired by Wordpress custom post types.
 </p>
 
