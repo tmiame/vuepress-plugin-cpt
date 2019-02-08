@@ -1,23 +1,14 @@
 <br>
 
-<h1 align="center">
-  VuePress Custom Post Type
-</h1>
+<h1 align="center">VuePress Custom Post Type</h1>
 
 <h4 align="center">Custom post types and taxonomy plugin for VuePress 1.x-alpha.</h4>
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/vuepress-plugin-cpt" rel="nofollow"><img alt="npm version" src="https://img.shields.io/npm/v/vuepress-plugin-cpt.svg?style=flat-square" style="max-width:100%;"></a>
-  <a href="/LICENSE.md" rel="nofollow"><img alt="license" src="https://img.shields.io/github/license/tmiame/vuepress-plugin-cpt.svg?style=flat-square" style="max-width:100%;"></a>
-</p>
+<p align="center"><a href="https://www.npmjs.com/package/vuepress-plugin-cpt" rel="nofollow"><img alt="npm version" src="https://img.shields.io/npm/v/vuepress-plugin-cpt.svg?style=flat-square" style="max-width:100%;"></a><a href="/LICENSE.md" rel="nofollow"><img alt="license" src="https://img.shields.io/github/license/tmiame/vuepress-plugin-cpt.svg?style=flat-square" style="max-width:100%;"></a></p>
 
-<p align="center">
-Inspired by Wordpress custom post types.
-</p>
+<p align="center">Inspired by Wordpress custom post types.</p>
 
-<p align="center">
-  <a href="#getting-started">Getting started</a>&nbsp;|&nbsp;<a href="#documentation">Documentation</a>&nbsp;|&nbsp;<a href="#demos-and-examples">Demos and examples</a>&nbsp;|&nbsp;<a href="#tops">Tips</a>
-</p>
+<p align="center"><a href="#getting-started">Getting started</a>&nbsp;|&nbsp;<a href="#documentation">Documentation</a>&nbsp;|&nbsp;<a href="#demos-and-examples">Demos and examples</a>&nbsp;|&nbsp;<a href="#tops">Tips</a></p>
 
 <br>
 
@@ -602,6 +593,4 @@ Tested that we can handle ~300 pages in around 40s, and there are probably quite
 
 ---
 
-<p align="center">
-  <a href="LICENSE.md">MIT License</a>&nbsp;|&nbsp;© 2019 <a href="https://tmiame.com">tmiame</a>
-</p>
+<p align="center"><a href="LICENSE.md">MIT License</a>&nbsp;|&nbsp;© 2019 <a href="https://tmiame.com">tmiame</a></p>
