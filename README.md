@@ -1,5 +1,3 @@
-<h3 align="center"><code><i>Status: alpha</i></code></h3>
-
 <br>
 
 <h1 align="center">
@@ -7,11 +5,6 @@
 </h1>
 
 <h4 align="center">Custom post types and taxonomy plugin for VuePress 1.x-alpha.</h4>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/animejs" rel="nofollow"><img src="https://camo.githubusercontent.com/011820ee25bf1d3ddaf635d869903b98eccaeae7/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f616e696d656a732e7376673f7374796c653d666c61742d737175617265" alt="npm version" data-canonical-src="https://img.shields.io/npm/v/animejs.svg?style=flat-square" style="max-width:100%;"></a>
-  <a href="https://www.npmjs.com/package/animejs" rel="nofollow"><img src="https://camo.githubusercontent.com/3e9b69d51aee25fad784a3097676696096621d47/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f646d2f616e696d656a732e7376673f7374796c653d666c61742d737175617265" alt="npm downloads" data-canonical-src="https://img.shields.io/npm/dm/animejs.svg?style=flat-square" style="max-width:100%;"></a>
-</p>
 
 <p align="center">
 This plugin is inspired by Wordpress custom post types.
@@ -25,9 +18,9 @@ This plugin is inspired by Wordpress custom post types.
 
 ## Demos and examples
 
-__Basic(Default Options)__ - [Demo](https://github.com/tmiame/vuepress-plugin-cpt) | [Code](https://github.com/tmiame/vuepress-plugin-cpt/demos/demo/)
+__Basic(Default Options)__ - [Demo](https://vuepress-plugin-cpt.netlify.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/4dd34b93-1ac4-4471-8fb8-52390264fee5/deploy-status)](https://vuepress-plugin-cpt.netlify.com/) | [Code](https://github.com/tmiame/vuepress-plugin-cpt/demos/demo/)
 
-__i18n__ - [Demo](https://github.com/tmiame/vuepress-plugin-cpt) | [Code](https://github.com/tmiame/vuepress-plugin-cpt/demos/demo-i18n/)
+__i18n__ - [Demo](https://vuepress-plugin-cpt-i18n.netlify.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/3ecb5a8b-631b-4371-aab8-16d847c4e4ad/deploy-status)](https://vuepress-plugin-cpt-i18n.netlify.com/) | [Code](https://github.com/tmiame/vuepress-plugin-cpt/demos/demo-i18n/)
 
 <br>
 
