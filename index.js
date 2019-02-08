@@ -208,10 +208,10 @@ module.exports = (options, ctx) => {
         obj[newKey].name = key
       }
       if (!label) {
-        obj[newKey].label = (slug) ? slug : key
+        obj[newKey].label = (slug) ? slug : obj[newKey].name
       }
 
-      obj[newKey].slug = (slug) ? encodeURIComponent(slug) : encodeURIComponent(key)
+      obj[newKey].slug = (slug) ? encodeURIComponent(slug) : encodeURIComponent(obj[newKey].name)
 
       return obj
     }
