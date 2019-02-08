@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-This plugin is inspired by Wordpress custom post types.
+Inspired by Wordpress custom post types.
 </p>
 
 <p align="center">
