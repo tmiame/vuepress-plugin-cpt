@@ -18,9 +18,9 @@ This plugin is inspired by Wordpress custom post types.
 
 ## Demos and examples
 
-__Basic(Default Options)__ - [Demo](https://vuepress-plugin-cpt.netlify.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/4dd34b93-1ac4-4471-8fb8-52390264fee5/deploy-status)](https://vuepress-plugin-cpt.netlify.com/) | [Code](https://github.com/tmiame/vuepress-plugin-cpt/demos/demo/)
+__Basic(Default Options)__ - [Demo](https://vuepress-plugin-cpt.netlify.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/4dd34b93-1ac4-4471-8fb8-52390264fee5/deploy-status)](https://vuepress-plugin-cpt.netlify.com/) | [Code](/demos/demo/)
 
-__i18n__ - [Demo](https://vuepress-plugin-cpt-i18n.netlify.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/3ecb5a8b-631b-4371-aab8-16d847c4e4ad/deploy-status)](https://vuepress-plugin-cpt-i18n.netlify.com/) | [Code](https://github.com/tmiame/vuepress-plugin-cpt/demos/demo-i18n/)
+__i18n__ - [Demo](https://vuepress-plugin-cpt-i18n.netlify.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/3ecb5a8b-631b-4371-aab8-16d847c4e4ad/deploy-status)](https://vuepress-plugin-cpt-i18n.netlify.com/) | [Code](/demos/demo-i18n/)
 
 <br>
 
