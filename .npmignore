@@ -1,4 +1,6 @@
 demos/
+public-demo/
+public-demo-i18n/
 .editorconfig
 .eslintignore
 .eslintrc.js
