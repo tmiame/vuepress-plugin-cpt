@@ -179,7 +179,8 @@ module.exports = (options, ctx) => {
   let enhancers = []
   let cptMeta = options
 
-  const isLayoutExists = name => ctx.layoutComponentMap[name] !== undefined
+  const { themeAPI: { layoutComponentMap  } } = ctx
+  const isLayoutExists = name => layoutComponentMap[name] !== undefined
   const getLayout = (name, fallback) => isLayoutExists(name) ? name : fallback
 
   if (cptMeta.locales && Object.keys(cptMeta.locales).length > 0) {
